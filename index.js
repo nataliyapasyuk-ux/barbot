@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 // env на bothost «только для чтения» — поэтому токен задаём прямо тут (fallback).
 // ВНИМАНИЕ: НЕ коммить этот файл с реальным токеном в публичный GitHub-репозиторий!
 const BOT_TOKEN = process.env.BOT_TOKEN || process.env.TELEGRAM_BOT_TOKEN || "8821101949:AAEebrIwGHRDcyg6BGUvzX0gD1Lemg2Gzcw";
-const EXPECTED_SECRET = process.env.SECRET_KEY || process.env['bar-notify'];
+const EXPECTED_SECRET = process.env.SECRET_KEY || process.env['bar-notify'] || "9lQDI2k14gP03aWNpIrO4Ej2";
 // Отличия от бота Ноты/feels: бэкенд bar (barfiles.ru) + forum_prefix (можно переопределить env)
 const VPS_NOTIFY_URL = process.env.VPS_NOTIFY_URL || "https://barfiles.ru/js/notify/notify.php";
 const FORUM_PREFIX = process.env.FORUM_PREFIX || "bar";
